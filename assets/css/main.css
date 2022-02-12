@@ -1,0 +1,71 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 95% !important;
+}
+
+body {
+  height: auto;
+}
+
+header {
+  background-color: #f0f0f0;
+  width: 100%;
+  height: auto;
+  padding: 5px 0px;
+  background-color: #212529;
+  color: #ffffff;
+}
+header nav .navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar__tagessection {
+  width: 100%;
+  height: auto;
+}
+.navbar__tages {
+  width: 100%;
+  height: auto;
+}
+.navbar__tages a {
+  width: auto;
+  padding: 5px 10px;
+  background-color: cadetblue;
+  margin: 5px 0 5px 5px;
+}
+.navbar__tages a:first-child {
+  margin: 5px 0 5px 0px;
+}
+.navbar__tages a:hover {
+  background-color: cadetblue;
+  color: inherit;
+}
+
+.section__body .row div {
+  margin: 10px 0;
+}
+
+.section__about {
+  margin: 10px 0;
+}
+.section__about h2 {
+  font-weight: bold;
+  margin: 20px 0;
+}
+.section__about p {
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.footer {
+  background-color: #212529;
+  color: #ffffff;
+  padding: 20px 0;
+  width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */
