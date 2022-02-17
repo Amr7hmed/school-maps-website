@@ -1,4 +1,3 @@
-// .dataset.image;
 const RegisterChild = document.querySelectorAll(".register__child");
 
 function ShowChild(src) {
@@ -16,6 +15,7 @@ function HideChild() {
     item.style.display = "none";
   });
 }
+
 
 document.getElementById("student").addEventListener("change", function () {
   HideChild();
