@@ -58,3 +58,5 @@ function zoom__mouse(event) {
 }
 
 Imgshow.onwheel = zoom__mouse;
+
+

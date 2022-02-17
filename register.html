@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Maps</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/vendor/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+    <header style="padding: 20px 10px">
+        <div class="container">
+            <div class="navbar__logo">
+                <a> LOGO </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section__form">
+        <div class="container">
+            <section class="form__register">
+                <h3>Register</h3>
+                <form class="row g-3">
+                    <h4>Basic Information</h4>
+                    <div class="col-12 row mb-3">
+                        <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputName" />
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 row mb-3">
+                        <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail" />
+                        </div>
+                    </div>
+                    <div class="col-12 row mb-3">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                    <div class="col-12 row mb-3">
+                        <label for="birthday" class="col-sm-2 col-form-label">Date of Birth</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="date" id="birthday" name="birthday" />
+                        </div>
+                    </div>
+
+                    <div class="col-12 row mb-3">
+                        <label for="inputGovernorate" class="col-sm-2 col-form-label">Governorate</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputGovernorate" />
+                        </div>
+                    </div>
+
+                    <div class="col-12 row mb-3">
+                        <label for="inputCity" class="col-sm-2 col-form-label">Center / City</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputCity" />
+                        </div>
+                    </div>
+
+                    <div class="col-12 row mb-3">
+                        <label class="col-sm-2 col-lg-2 col-form-label" style="margin: 3px 0;">Type</label>
+                        <div class="col-sm-10 col-lg-4">
+                            <span class="col-form-label">
+                                <label class="form-check-label" for="male">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="male"
+                                        value="Male" />
+                                    Male
+                                </label>
+                            </span>
+                            <span class="col-form-label">
+                                <label class="form-check-label" for="female">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="female"
+                                        value="Female" />
+                                    Female
+                                </label>
+                            </span>
+                        </div>
+                        <label class="col-sm-2 col-lg-2 col-form-label" style="margin: 3px 0;">Account Status</label>
+                        <div class="col-sm-10 col-lg-4">
+                            <span class="col-form-label">
+                                <label class="form-check-label" for="student">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="student"
+                                        value="Student" />
+                                    Student
+                                </label>
+                            </span>
+                            <span class="col-form-label">
+                                <label class="form-check-label" for="teacher">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="teacher"
+                                        value="Teacher" />
+                                    Teacher
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-12 register__child" data-form="student">
+                        <div class="row mb-3">
+                            <label class="col-sm-2 col-form-label" style="margin: 3px 0;">Educational level</label>
+                            <div class="col-sm-10">
+                                <span class="col-form-label">
+                                    <label class="form-check-label" for="pre-universitylevel"
+                                        value="Pre-university Level">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="pre-universitylevel" />
+                                        Pre-university Level
+                                    </label>
+                                </span>
+                                <span class="col-form-label">
+                                    <label class="form-check-label" for="universitylevel" value="University Level">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="universitylevel" />
+                                        University Level
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="register__child" data-form="pre-universitylevel">
+                        <div class="mb-3">
+                            <div class="col-12 row">
+                                <label class="col-sm-2 col-form-label" style="margin: 3px 0;">Educational level</label>
+                                <div class="col-sm-10">
+                                    <select class="form-select" id="inputGroupSelect01">
+                                        <option selected>Choose...</option>
+                                        <option value="High School">High School</option>
+                                        <option value="Middle School">Middle School</option>
+                                        <option value="Primary School">Primary School</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="mb-3 row">
+                                <div class="col-sm-12 row mb-3">
+                                    <label for="academicyearschool" class="col-sm-2 col-form-label">Academic Year</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="academicyearschool" placeholder="Academic year"/>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 row mb-3">
+                                    <label for="schoolname" class="col-sm-2 col-form-label">School Name</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="schoolname" placeholder="School Name"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="register__child" data-form="universitylevel">
+                        <div class="mb-3">
+                            <div class="mb-3 row">
+                                
+                                <div class="col-sm-12 row mb-3">
+                                    <label for="universityname" class="col-sm-2 col-form-label">University Name</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="universityname" placeholder="University Name">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 row mb-3">
+                                    <label for="collegename" class="col-sm-2 col-form-label">College Name</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="collegename" placeholder="College Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 row mb-3">
+                                    <label for="departmentname" class="col-sm-2 col-form-label">Department Name</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="departmentname" placeholder="Department Name">
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-12 row mb-3">
+                                    <label for="divisionname" class="col-sm-2 col-form-label">Division Name</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="divisionname" placeholder="Division Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 row mb-3">
+                                    <label for="academicyearuniversity" class="col-sm-2 col-form-label">Academic Year</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="academicyearuniversity" placeholder="Academic Year">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 register__child" data-form="teacher">
+                        <div class="row mb-3">
+                            <label class="col-sm-2 col-form-label" style="margin: 3px 0;">Teacher</label>
+                            <div class="col-sm-10">
+                                <span class="col-form-label">
+                                    <label class="form-check-label" for="universityprofessor">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="universityprofessor" value="University Professor" />
+                                        University Professor
+                                    </label>
+                                </span>
+                                <span class="col-form-label">
+                                    <label class="form-check-label" for="pre-universityprofessor">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="pre-universityprofessor" value="Pre-university Professor" />
+                                        Pre-university Professor</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="register__child" data-form="pre-universityprofessor">
+                        <div class="mb-3">
+                            <div class="mb-3 row">
+                                
+                                <div class="col-sm-12 row mb-3">
+                                    <label for="specialization" class="col-sm-2 col-form-label">Specialization</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="specialization" placeholder="Specialization">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        <button type="submit" class="btn">Create</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            © 2021 Logo By <a>Logo</a> . All Rights Reserved.
+        </div>
+    </section>
+
+    <!-- Bootstrap Js -->
+    <script src="assets/js/vendor/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <!-- Main Script -->
+    <script src="assets/js/register.js"></script>
+</body>
+
+</html>

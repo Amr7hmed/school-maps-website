@@ -116,7 +116,7 @@ header nav .navbar-collapse {
   overflow-y: scroll;
   height: 800px;
   margin: 15px 0;
-  margin-left: 2%;
+  margin-right: 2%;
 }
 .showimg__list__contener {
   background-color: #212529;
@@ -140,7 +140,7 @@ header nav .navbar-collapse {
 }
 .showimg__list__body {
   width: 45%;
-  margin-left: 5%;
+  margin-right: 5%;
 }
 .showimg__list__body p {
   font-size: 12px;
@@ -177,14 +177,14 @@ header nav .navbar-collapse {
   position: absolute;
   top: 15px;
   background-color: transparent;
-  left: 5px;
+  right: 5px;
   z-index: 2;
 }
 .showimg__card .card__img .card__button img {
   width: 20px;
   height: 20px;
   position: absolute;
-  left: 10px;
+  right: 10px;
   z-index: 4;
   filter: invert(47%) sepia(0%) saturate(4128%) hue-rotate(252deg) brightness(125%) contrast(63%);
   cursor: default;
@@ -273,7 +273,7 @@ header nav .navbar-collapse {
   padding: 20px 0;
   position: absolute;
   top: 45%;
-  left: 50%;
+  right: 50%;
   transform: translate(-50%, -50%);
 }
 .section__form .form__login form {
@@ -320,11 +320,11 @@ header nav .navbar-collapse {
 }
 .section__form .form__register .row {
   padding: 0;
-  margin-left: 0;
+  margin-right: 0;
   margin-right: 0;
 }
 .section__form .form__register .row.row > * {
-  padding-left: 0;
+  padding-right: 0;
   padding-right: 0;
 }
 .section__form .form__register h3 {
@@ -374,4 +374,4 @@ header nav .navbar-collapse {
   display: none;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main_ar.css.map */
