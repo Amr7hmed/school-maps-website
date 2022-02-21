@@ -27,10 +27,7 @@ document.getElementById("teacher").addEventListener("change", function () {
     ShowChild(this);
   });
   
-  document.getElementById("pre-universitylevel").addEventListener("change", function () {
-    HideChild();
-    ShowChild(this);
-  });
+  
   
 document.getElementById("universitylevel").addEventListener("change", function () {
     HideChild();
