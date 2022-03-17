@@ -23,6 +23,7 @@ body {
   box-sizing: border-box;
   color: #ffffff;
   background-color: #393939;
+  direction: ltr;
 }
 
 a {

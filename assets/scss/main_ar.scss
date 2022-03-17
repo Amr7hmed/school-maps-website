@@ -29,6 +29,8 @@ body {
   box-sizing: border-box;
   color: $WhiteColor;
   background-color: $BackgroundColor;
+  direction: rtl;
+  text-align: right;
 }
 a {
   text-decoration: none;
@@ -52,7 +54,7 @@ header {
   color: $WhiteColor;
   nav {
     .navbar-collapse {
-      justify-content: flex-end;
+      justify-content: flex-start;
     }
   }
 }
@@ -69,7 +71,7 @@ header {
       width: auto;
       padding: 5px 10px;
       background-color: $colortwo;
-      margin: 5px 0 5px 5px;
+      margin: 5px 5px 5px 0;
       &:hover {
         background-color: $colortwo;
         color: inherit;
@@ -191,13 +193,13 @@ header {
         position: absolute;
         top: 15px;
         background-color: transparent;
-        right: 5px;
+        left: 5px;
         z-index: 2;
         img {
           width: 20px;
           height: 20px;
           position: absolute;
-          right: 10px;
+          left: 10px;
           z-index: 4;
           filter: invert(47%) sepia(0%) saturate(4128%) hue-rotate(252deg)
             brightness(125%) contrast(63%);
@@ -298,7 +300,7 @@ header {
       padding: 20px 0;
       position: absolute;
       top: 45%;
-      right: 50%;
+      left: 50%;
       transform: translate(-50%, -50%);
       form {
         height: 100%;
@@ -361,11 +363,11 @@ header {
       margin: 50px auto;
       .row {
         padding: 0;
-        margin-right: 0;
+        margin-left: 0;
         margin-right: 0;
       }
       .row.row > * {
-        padding-right: 0;
+        padding-left: 0;
         padding-right: 0;
       }
       h3 {
